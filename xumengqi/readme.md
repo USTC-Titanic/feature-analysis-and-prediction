@@ -1,4 +1,4 @@
-##	简介
+##	初次尝试
 
 *	使用逻辑回归进行预测
 
@@ -13,6 +13,26 @@
 *	结果放在了 `result` 文件夹下
 
 	<br>
+
+##	改进1
+
+*	特征工程
+
+	*	从 `name` 中提取 `title`
+
+	*	将 `sib` 和 `parch` 相加得到 `FamilyLabel`
+
+	*	将 `ticket` 分组
+
+	*	对遇难组的乘客信息做惩罚性修改
+
+	*	进行 `one-hot` 编码
+
+	综上, 本次改进后使用到的特征是 `Survived, Pclass, Sex, Age, Fare, Embarked, Title, FamilyLabel, Deck, TicketGroup`
+
+*	模型与准确率
+
+	使用逻辑回归模型, 预测准确率为 `80.861%`
 
 ##	参考资料
 
